@@ -1,0 +1,16 @@
+{
+  "short_name": "GH Release",
+  "name": "GitHub Release Viewer",
+  "description": "View GitHub releases",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#24292e",
+  "background_color": "#FFF"
+}
