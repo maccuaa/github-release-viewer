@@ -179,32 +179,34 @@ export const Home = () => {
         )}
 
         {/* Results */}
-        <Container className={classes.cardGrid} maxWidth="md">
-          <Grid container spacing={4}>
-            <TableContainer component={Paper}>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Release Name</TableCell>
-                    <TableCell>Date Published</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {releases?.map((release) => (
-                    <TableRow key={release.id}>
-                      <TableCell>
-                        <Link href={release.html_url} target="_blank" rel="noopener">
-                          {release.name || release.tag_name}
-                        </Link>
-                      </TableCell>
-                      <TableCell>{`${formatDistanceToNow(new Date(release.published_at))} ago`}</TableCell>
+        {releases !== null && (
+          <Container className={classes.cardGrid} maxWidth="md">
+            <Grid container spacing={4}>
+              <TableContainer component={Paper}>
+                <Table>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Release Name</TableCell>
+                      <TableCell>Date Published</TableCell>
                     </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
-        </Container>
+                  </TableHead>
+                  <TableBody>
+                    {releases?.map((release) => (
+                      <TableRow key={release.id}>
+                        <TableCell>
+                          <Link href={release.html_url} target="_blank" rel="noopener">
+                            {release.name || release.tag_name}
+                          </Link>
+                        </TableCell>
+                        <TableCell>{`${formatDistanceToNow(new Date(release.published_at))} ago`}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </Grid>
+          </Container>
+        )}
       </main>
       <Footer />
     </div>
