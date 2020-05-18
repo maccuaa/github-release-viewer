@@ -1,0 +1,14 @@
+name: Deploy
+on: [push]
+jobs:
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - uses: peaceiris/actions-gh-pages@v3
+      - run: node -v
+      - run: npm -v
+      - run: npm ci
+      - run: npm run deploy
