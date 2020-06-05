@@ -24,7 +24,7 @@
     "react-dom": "^16.13.1",
     "react-final-form": "6.5.0",
     "react-scripts": "3.4.1",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   },
   "scripts": {
     "predeploy": "npm run build",
