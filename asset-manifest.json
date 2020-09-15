@@ -5,17 +5,17 @@
     "main.js.map": "/github-release-viewer/static/js/main.62f14009.chunk.js.map",
     "runtime-main.js": "/github-release-viewer/static/js/runtime-main.a9bcd523.js",
     "runtime-main.js.map": "/github-release-viewer/static/js/runtime-main.a9bcd523.js.map",
-    "static/js/2.38c0a8c7.chunk.js": "/github-release-viewer/static/js/2.38c0a8c7.chunk.js",
-    "static/js/2.38c0a8c7.chunk.js.map": "/github-release-viewer/static/js/2.38c0a8c7.chunk.js.map",
+    "static/js/2.bf1f0699.chunk.js": "/github-release-viewer/static/js/2.bf1f0699.chunk.js",
+    "static/js/2.bf1f0699.chunk.js.map": "/github-release-viewer/static/js/2.bf1f0699.chunk.js.map",
     "index.html": "/github-release-viewer/index.html",
-    "precache-manifest.dc9f0a5b405ef317468e6b411b5ea2eb.js": "/github-release-viewer/precache-manifest.dc9f0a5b405ef317468e6b411b5ea2eb.js",
+    "precache-manifest.8672c5abf182572d147307031dd96b62.js": "/github-release-viewer/precache-manifest.8672c5abf182572d147307031dd96b62.js",
     "service-worker.js": "/github-release-viewer/service-worker.js",
     "static/css/main.e4164ef6.chunk.css.map": "/github-release-viewer/static/css/main.e4164ef6.chunk.css.map",
-    "static/js/2.38c0a8c7.chunk.js.LICENSE.txt": "/github-release-viewer/static/js/2.38c0a8c7.chunk.js.LICENSE.txt"
+    "static/js/2.bf1f0699.chunk.js.LICENSE.txt": "/github-release-viewer/static/js/2.bf1f0699.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a9bcd523.js",
-    "static/js/2.38c0a8c7.chunk.js",
+    "static/js/2.bf1f0699.chunk.js",
     "static/css/main.e4164ef6.chunk.css",
     "static/js/main.62f14009.chunk.js"
   ]
