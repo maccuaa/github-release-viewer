@@ -14,7 +14,7 @@
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.9",
     "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9",
+    "@types/react-dom": "^17.0.0",
     "date-fns": "2.16.1",
     "final-form": "4.20.1",
     "gh-pages": "3.1.0",
