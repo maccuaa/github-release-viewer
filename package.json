@@ -6,7 +6,7 @@
   "dependencies": {
     "@material-ui/core": "4.11.1",
     "@material-ui/icons": "4.9.1",
-    "@octokit/rest": "18.0.9",
+    "@octokit/rest": "18.0.10",
     "@octokit/types": "5.5.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
