@@ -5,7 +5,7 @@
   "homepage": "https://maccuaa.github.io/github-release-viewer/",
   "dependencies": {
     "@material-ui/core": "4.11.1",
-    "@material-ui/icons": "4.9.1",
+    "@material-ui/icons": "4.11.2",
     "@octokit/rest": "18.0.9",
     "@octokit/types": "5.5.0",
     "@testing-library/jest-dom": "^5.11.6",
