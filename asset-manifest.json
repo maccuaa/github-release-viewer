@@ -5,15 +5,15 @@
     "main.js.map": "/github-release-viewer/static/js/main.04c7fd2d.chunk.js.map",
     "runtime-main.js": "/github-release-viewer/static/js/runtime-main.01b8b2f1.js",
     "runtime-main.js.map": "/github-release-viewer/static/js/runtime-main.01b8b2f1.js.map",
-    "static/js/2.56ce7ba2.chunk.js": "/github-release-viewer/static/js/2.56ce7ba2.chunk.js",
-    "static/js/2.56ce7ba2.chunk.js.map": "/github-release-viewer/static/js/2.56ce7ba2.chunk.js.map",
+    "static/js/2.11445c16.chunk.js": "/github-release-viewer/static/js/2.11445c16.chunk.js",
+    "static/js/2.11445c16.chunk.js.map": "/github-release-viewer/static/js/2.11445c16.chunk.js.map",
     "index.html": "/github-release-viewer/index.html",
     "static/css/main.5f21148b.chunk.css.map": "/github-release-viewer/static/css/main.5f21148b.chunk.css.map",
-    "static/js/2.56ce7ba2.chunk.js.LICENSE.txt": "/github-release-viewer/static/js/2.56ce7ba2.chunk.js.LICENSE.txt"
+    "static/js/2.11445c16.chunk.js.LICENSE.txt": "/github-release-viewer/static/js/2.11445c16.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.01b8b2f1.js",
-    "static/js/2.56ce7ba2.chunk.js",
+    "static/js/2.11445c16.chunk.js",
     "static/css/main.5f21148b.chunk.css",
     "static/js/main.04c7fd2d.chunk.js"
   ]
