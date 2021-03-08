@@ -1,9 +1,12 @@
 import { Octokit } from "@octokit/rest";
-import { Endpoints } from "@octokit/types";
+// import { Endpoints } from "@octokit/types";
+// export type ReposListReleasesResponseData = Endpoints["GET /repos/{owner}/{repo}/releases"]["response"]["data"];
 
-export type ReposListReleasesResponseData = Endpoints["GET /repos/:owner/:repo/releases"]["response"]["data"][0];
+import { GetResponseDataTypeFromEndpointMethod } from "@octokit/types";
 
 const octokit = new Octokit();
+
+export type ReposListReleasesResponseData = GetResponseDataTypeFromEndpointMethod<typeof octokit.repos.listReleases>;
 
 export const GH_REGEX = new RegExp("(?:https?://)?github.com/([A-z0-9-_]+)/([A-z0-9-_]+)/?");
 
@@ -24,7 +27,7 @@ export const getReleases = async (
 ) => {
   let page = 1;
 
-  const results: ReposListReleasesResponseData[] = [];
+  const results: ReposListReleasesResponseData = [];
 
   const pageResult = await octokit.repos.listReleases({ owner, repo, per_page: 100, page: 1 });
 

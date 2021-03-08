@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
 export const Home = () => {
   const classes = useStyles();
 
-  const [releases, setReleases] = React.useState<ReposListReleasesResponseData[] | null>(null);
+  const [releases, setReleases] = React.useState<ReposListReleasesResponseData | null>(null);
   const [loading, setLoading] = React.useState(false);
   const [progress, setProgress] = React.useState<number | null>(null);
   const [rateRemaining, setRateRemaining] = React.useState<number | null>(null);
@@ -198,7 +198,9 @@ export const Home = () => {
                             {release.name || release.tag_name}
                           </Link>
                         </TableCell>
-                        <TableCell>{`${formatDistanceToNow(new Date(release.published_at))} ago`}</TableCell>
+                        <TableCell>{`${formatDistanceToNow(
+                          new Date(release?.published_at ?? Date.now())
+                        )} ago`}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
