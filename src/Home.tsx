@@ -29,7 +29,6 @@ import Typography from "@material-ui/core/Typography";
 import { Form } from "react-final-form";
 import { formatDistanceToNow, format } from "date-fns";
 import { GH_REGEX, ReposListReleasesResponseData, getReleases, validGitHubRepoURL } from "./lib/releases";
-import { io } from "socket.io-client";
 import { TextField } from "mui-rff";
 
 interface FormValues {
@@ -66,14 +65,6 @@ export const Home = () => {
   const [rateRemaining, setRateRemaining] = React.useState<number | null>(null);
   const [rateReset, setRateReset] = React.useState<number | null>(null);
   const [rateLimit, setRateLimit] = React.useState<number | null>(null);
-
-  React.useEffect(() => {
-    console.info("connecting to websocket...");
-    const socket = io("http://127.0.0.1:8088");
-    socket.on("connect", () => {
-      console.log("Connected", socket.id);
-    });
-  }, []);
 
   const onProgress = (completed: number, total: number, remaining: number, limit: number, resetDate: number) => {
     const progress = (completed * 100) / total;
